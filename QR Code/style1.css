@@ -1,0 +1,106 @@
+  .grid {
+    inline-size: 100%;
+    margin-inline: auto;
+    max-inline-size: 350px;
+    display:grid;
+  }
+  * {
+    box-sizing: inherit;
+  }
+  html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  h1{
+    color: #000000;
+  }
+  body {
+    background-color: #ffffff;
+   color: rgb(0, 0, 0);
+    font-family: "Open sans" "sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    min-block-size: 100vh;
+     display: grid;
+    place-items: center;
+  }    
+  input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  textarea {
+    background-image: none;
+    border-color: #9b27af;
+    border-width: 2px;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  select,option {
+    background-image: none;
+    border-color: #9b27af;
+    border-width: 2px;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+  }
+  textarea,
+  select,
+  option,
+  input[type="submit"] {
+    inline-size: 100%;
+  }
+  textarea,
+  select,
+  option,
+  textarea,
+  input[type="submit"] {
+  padding: 16px;
+  }
+  textarea,option,select {
+    background-color: #ffffff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  textarea:focus,
+  textarea:hover {
+    background-color: #ffffff;
+  }  
+  input[type="submit"] {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  }
+
+  input[type="submit"]:focus,
+  input[type="submit"]:hover {
+    background-color: #9b27af;
+  }
+  p {
+    margin-block: 24px;
+    text-align: center;
+    color: #000000;
+  }
+  img
+  {
+  max-width: 100%;
+  max-height: 100%;
+  }

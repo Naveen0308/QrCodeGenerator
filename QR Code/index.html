@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <script type="text/javascript">
+        function generateqr()
+        {
+            var gapi= "https://chart.googleapis.com/chart?chf=bg,s,65432100&cht=qr&chs=";
+            var qrimg=document.getElementById("imgqr");
+            var qrtext=document.getElementById("text").value;
+            var qrsize=document.getElementById("size").value;
+            if(qrtext!=="" && qrsize=="100")
+            {
+                qrimg.src=gapi+"100x100"+"&chl="+qrtext;
+            }
+            else if(qrtext!=="" && qrsize=="150")
+            {
+                qrimg.src=gapi+"150x150"+"&chl="+qrtext;
+            }
+            else if(qrtext!=="" && qrsize=="200")
+            {
+                qrimg.src=gapi+"200x200"+"&chl="+qrtext;
+            }
+            else if(qrtext!=="" && qrsize=="250")
+            {
+                qrimg.src=gapi+"250x250"+"&chl="+qrtext;
+            }
+            else if(qrtext!=="" && qrsize=="300")
+            {
+                qrimg.src=gapi+"300x300"+"&chl="+qrtext;
+            }
+            else
+            {
+                alert("Please Enter Text");
+            }
+        }
+    </script>
+    <div class="grid">
+        <h1 align="center">QR Code Generator</h1>
+        <center>
+            <img src="" id="imgqr"></center>
+        <select  id="size">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200" selected>200x200</option>
+            <option value="250">250x250</option>
+            <option value="300">300x300</option>
+        </select>
+        <br></br>
+        <textarea placeholder="Enter Your Text" id="text"></textarea>
+        <br></br>
+        <input type="submit" value="Generate" onclick="generateqr()">
+        <p>Designed by Naveen<br>@Copyrights Reseved</p>
+    </div>
+</body>
+</html>
